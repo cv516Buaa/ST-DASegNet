@@ -17,8 +17,6 @@ This repo is the implementation of "Self-Training Guided Disentangled Adaptation
 
 **LoveDA**
 
-**MMOTU** : [google drive](https://drive.google.com/drive/folders/1c5n0fVKrM9-SZE1kacTXPt1pt844iAs1?usp=sharing) (move OTU_2d and OTU_3d to data folder. Here, OTU_3d folder indicates OTU_CEUS in paper.)
-
 ## ST-DASegNet
 
 ### Install
