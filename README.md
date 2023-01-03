@@ -130,7 +130,7 @@ Trained with the above commands, you can get a trained model to test the perform
      ./tools/dist_test.sh yourpath/config.py yourpath/trainedmodel.pth --eval mFscore 
      ```
 
-2. Testing cases
+2. Testing cases: **P2V_IRRG_64.33.pth and V2P_IRRG_59.65.pth** : [google drive](https://drive.google.com/drive/folders/1qVTxY0nf4Rm4-ht0fKzIgGeLu4tAMCr-?usp=sharing)
 
     ```
      cd ST-DASegNet
