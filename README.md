@@ -119,13 +119,25 @@ For LoveDA results, we evaluate on test datasets and submit to online server (ht
 
 ### Testing
   
-Trained with the above commands, you can get a trained model. To test the performance of your model, please use the following commands.    
-     
-     
+Trained with the above commands, you can get a trained model to test the performance of your model.   
+
+1. Testing commands
+
+    ```
      cd ST-DASegNet
      
      ./tools/dist_test.sh yourpath/config.py yourpath/trainedmodel.pth --eval mIoU   
      ./tools/dist_test.sh yourpath/config.py yourpath/trainedmodel.pth --eval mFscore 
+     ```
+
+2. Testing cases
+
+    ```
+     cd ST-DASegNet
+     
+     ./tools/dist_test.sh ./experiments/segformerb5/config/ST-DASegNet_segformerb5_769x769_40k_Potsdam2Vaihingen.py 2 ./experiments/segformerb5/ST-DASegNet_results/P2V_IRRG_64.33.pth --eval mIoU   
+     ./tools/dist_test.sh ./experiments/segformerb5/config/ST-DASegNet_segformerb5_769x769_40k_Potsdam2Vaihingen.py 2 ./experiments/segformerb5/ST-DASegNet_results/P2V_IRRG_64.33.pth --eval mFscore 
+     ```
 
 The ArXiv version of this paper will be release soon!
 
