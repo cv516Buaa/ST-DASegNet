@@ -4,8 +4,8 @@ This repo is the implementation of "Self-Training Guided Disentangled Adaptation
 
 <table>
     <tr>
-    <td><img src="PaperFigs\Fig1.png" width = "100%" alt="MMOTU"/></td>
-    <td><img src="PaperFigs\Fig4.png" width = "100%" alt="DS2Net"/></td>
+    <td><img src="PaperFigs\Fig1.png" width = "100%" alt="Cross-Domain RS Semantic Segmentation"/></td>
+    <td><img src="PaperFigs\Fig4.png" width = "100%" alt="ST-DASegNet"/></td>
     </tr>
 </table>
 
