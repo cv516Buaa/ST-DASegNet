@@ -118,10 +118,14 @@ For LoveDA results, we evaluate on test datasets and submit to online server (ht
      ```
 
 ### Testing
-
-     cd MMOTU_DS2Net
+  
+Trained with the above commands, you can get a trained model. To test the performance of your model, please use the following commands.    
      
-     ./tools/dist_test.sh ./experiments/DS2Net_segformerb5_769x769_40k_MMOTU/config/DS2Net_segformerb5_769x769_40k_MMOTU.py ./experiments/DS2Net_segformerb5_769x769_40k_MMOTU/results/iter_40000.pth --eval mIoU
+     
+     cd ST-DASegNet
+     
+     ./tools/dist_test.sh yourpath/config.py yourpath/trainedmodel.pth --eval mIoU   
+     ./tools/dist_test.sh yourpath/config.py yourpath/trainedmodel.pth --eval mFscore 
 
 The ArXiv version of this paper will be release soon!
 
