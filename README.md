@@ -9,13 +9,17 @@ This repo is the implementation of "Self-Training Guided Disentangled Adaptation
     </tr>
 </table>
 
-## Dataset
+## Dataset Preparation
 
-**Multi-Modality Ovarian Tumor Ultrasound (MMOTU) image dataset** consists of two sub-sets with two modalities, which are **OTU\_2d** and **OTU\_CEUS** respectively including **1469 2d ultrasound images** and **170 CEUS images**. On both of these two sub-sets, we provide pixel-wise semantic annotations and global-wise category annotations. **Many thanks to Department of Gynecology and Obstetrics, Beijing Shijitan Hospital, Capital Medical University and their excellent works on collecting and annotating the data.**
+**Potsdam**
+
+**Vaihingen**
+
+**LoveDA**
 
 **MMOTU** : [google drive](https://drive.google.com/drive/folders/1c5n0fVKrM9-SZE1kacTXPt1pt844iAs1?usp=sharing) (move OTU_2d and OTU_3d to data folder. Here, OTU_3d folder indicates OTU_CEUS in paper.)
 
-## DS<sup>2</sup>Net
+## ST-DASegNet
 
 ### Install
 
@@ -93,19 +97,3 @@ This repo is the implementation of "Self-Training Guided Disentangled Adaptation
 - https://arxiv.org/abs/2207.06799 
 
 If you have any question, please discuss with me by sending email to lyushuchang@buaa.edu.cn.
-
-If you find this code useful please cite:
-```
-@article{DBLP:journals/corr/abs-2207-06799,
-  author    = {Qi Zhao and
-               Shuchang Lyu and
-               Wenpei Bai and
-               Linghan Cai and
-               Binghao Liu and
-               Meijing Wu and
-               Xiubo Sang and
-               Min Yang and
-               Lijiang Chen},
-  title     = {A Multi-Modality Ovarian Tumor Ultrasound Image Dataset for Unsupervised
-               Cross-Domain Semantic Segmentation},
-  journal   = {CoRR},
