@@ -11,11 +11,25 @@ This repo is the implementation of "Self-Training Guided Disentangled Adaptation
 
 ## Dataset Preparation
 
+We select Postsdam, Vaihingen and LoveDA as benchmark datasets and create train, val, test list for researchers to follow. 
+
+**In the following, we provide the detailed commands for dataset preparation.**
+
 **Potsdam**
+     
+     Move the ‘3_Ortho_IRRG.zip’ and ‘5_Labels_all_noBoundary.zip’ to Potsdam_IRRG folder 
+     Move the ‘2_Ortho_RGB.zip’ and ‘5_Labels_all_noBoundary.zip’ to Potsdam_RGB folder
+     python tools/convert_datasets/potsdam.py yourpath/ST-DASegNet/data/Potsdam_IRRG/ --clip_size 512 --stride_size 512
+     python tools/convert_datasets/potsdam.py yourpath/ST-DASegNet/data/Potsdam_RGB/ --clip_size 512 --stride_size 512
 
 **Vaihingen**
 
+     Move the 'ISPRS_semantic_labeling_Vaihingen.zip' and 'ISPRS_semantic_labeling_Vaihingen_ground_truth_eroded_COMPLETE.zip' to Vaihingen_IRRG folder 
+     python tools/convert_datasets/vaihingen.py yourpath/ST-DASegNet/data/Vaihingen_IRRG/ --clip_size 512 --stride_size 256
+
 **LoveDA**
+    
+     Unzip Train.zip, Val.zip, Test.zip and create Train, Val and Test list for Urban and Rural
 
 ## ST-DASegNet
 
@@ -29,10 +43,10 @@ This repo is the implementation of "Self-Training Guided Disentangled Adaptation
         
     cuda >= 10.0
     
-2. prerequisites: Please refer to  [MMSegmentation PREREQUISITES](https://mmsegmentation.readthedocs.io/en/latest/get_started.html); Please don't forget to install mmsegmentation with
+2. prerequisites: Please refer to  [MMSegmentation PREREQUISITES](https://mmsegmentation.readthedocs.io/en/latest/get_started.html).
 
      ```
-     cd MMOTU_DS2Net
+     cd ST-DASegNet
      
      pip install -e .
      
@@ -43,7 +57,7 @@ This repo is the implementation of "Self-Training Guided Disentangled Adaptation
 
 ### Training
 
-**mit_b5.pth** : [google drive](https://drive.google.com/drive/folders/1cmKZgU8Ktg-v-jiwldEc6IghxVSNcFqk?usp=sharing) (Before training Segformer or DS<sup>2</sup>Net_T, loading ImageNet-pretrained mit_b5.pth is very useful. We provide this pretrained backbone here. The pretrained backbone has already been transformed to fit for our repo.)
+**mit_b5.pth** : [google drive](https://drive.google.com/drive/folders/1cmKZgU8Ktg-v-jiwldEc6IghxVSNcFqk?usp=sharing) For SegFormerb5 based ST-DASegNet training, we provide ImageNet-pretrained backbone here.
 
 #### Task1: Single-modality semantic segmentation
 
