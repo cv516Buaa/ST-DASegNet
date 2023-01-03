@@ -122,8 +122,7 @@ For LoveDA results, we evaluate on test datasets and submit to online server (ht
      cd MMOTU_DS2Net
      
      ./tools/dist_test.sh ./experiments/DS2Net_segformerb5_769x769_40k_MMOTU/config/DS2Net_segformerb5_769x769_40k_MMOTU.py ./experiments/DS2Net_segformerb5_769x769_40k_MMOTU/results/iter_40000.pth --eval mIoU
-     
-## Description of MMOTU/DS<sup>2</sup>Net
-- https://arxiv.org/abs/2207.06799 
+
+The ArXiv version of this paper will be release soon!
 
 If you have any question, please discuss with me by sending email to lyushuchang@buaa.edu.cn.
