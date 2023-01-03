@@ -149,3 +149,9 @@ Trained with the above commands, you can get a trained model to test the perform
 The ArXiv version of this paper will be release soon!
 
 If you have any question, please discuss with me by sending email to lyushuchang@buaa.edu.cn.
+
+# References
+Many thanks to their excellent works
+* [MMSegmentation](https://github.com/open-mmlab/mmsegmentation)
+* [MMGeneration](https://github.com/open-mmlab/mmgeneration)
+* [DAFormer](https://github.com/lhoyer/DAFormer)
