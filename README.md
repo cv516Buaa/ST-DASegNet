@@ -65,8 +65,8 @@ For LoveDA results, we evaluate on test datasets and submit to online server (ht
 
 <table>
     <tr>
-    <td><img src="PaperFigs\Fig5.png" width = "100%" alt="LoveDA UDA Urban"/></td>
-    <td><img src="PaperFigs\Fig6.png" width = "100%" alt="LoveDA UDA Rural"/></td>
+    <td><img src="PaperFigs\LoveDA_Leaderboard_Urban.jpg" width = "100%" alt="LoveDA UDA Urban"/></td>
+    <td><img src="PaperFigs\LoveDA_Leaderboard_Rural.jpg" width = "100%" alt="LoveDA UDA Rural"/></td>
     </tr>
 </table>
 
