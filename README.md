@@ -63,6 +63,13 @@ We select deeplabv3 and Segformerb5 as baselines. Actually, we use deeplabv3+, w
 
 For LoveDA results, we evaluate on test datasets and submit to online server (https://github.com/Junjue-Wang/LoveDA) (https://codalab.lisn.upsaclay.fr/competitions/424). We also provide the evaluation results on validation dataset.
 
+<table>
+    <tr>
+    <td><img src="PaperFigs\Fig5.png" width = "100%" alt="LoveDA UDA Urban"/></td>
+    <td><img src="PaperFigs\Fig6.png" width = "100%" alt="LoveDA UDA Rural"/></td>
+    </tr>
+</table>
+
 1. Potsdam IRRG to Vaihingen IRRG:
 
      ```
