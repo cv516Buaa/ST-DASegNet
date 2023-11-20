@@ -31,6 +31,20 @@ We select Postsdam, Vaihingen and LoveDA as benchmark datasets and create train,
     
      Unzip Train.zip, Val.zip, Test.zip and create Train, Val and Test list for Urban and Rural
 
+**Sentinel-2**
+    
+     python tools/convert_datasets/Sentinel-2.py ./data/yourpath  --out_dir ./data/Sentinel2
+
+**GID (GF-2)**
+    
+     python tools/convert_datasets/GF-2.py ./data/yourpath/GID/Large-scale_Classification_5classes/image_NirRGB --out_dir ./data/GID_G2R/ --clip_size 1024 --stride_size 1024
+     python tools/convert_datasets/GF-2.py ./data/yourpath/GID/Large-scale_Classification_5classes/label_5classes --out_dir ./data/GID_G2R/ --clip_size 1024 --stride_size 1024
+
+**CITY-OSM: CHICAGO and PARIS**
+    
+    python tools/convert_datasets/CITY-OSM.py ./data/yourpath/CITY-OSM/paris/ --out_dir ./data/CITY_paris/ --clip_size 512 --stride_size 512
+    python tools/convert_datasets/CITY-OSM.py ./data/yourpath/CITY-OSM/chicago/ --out_dir ./data/CITY_chicago/ --clip_size 512 --stride_size 512
+
 ## ST-DASegNet
 
 ### Install
