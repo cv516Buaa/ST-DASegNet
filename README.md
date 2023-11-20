@@ -138,6 +138,30 @@ For LoveDA results, we evaluate on test datasets and submit to online server (ht
      ./tools/dist_train.sh ./experiments/segformerb5/config_LoveDA/ST-DASegNet_segformerb5_769x769_40k_U2R.py 2
      ```
 
+7. LoveDA R-G-B Rural to LandCoverNet Sentinel-2
+
+     ```
+     cd ST-DASegNet
+     
+     ./tools/dist_train.sh ./experiments/segformerb5/config_S2LoveDA/ST-DASegNet_segformerb5_769x769_40k_R2S.py 2
+     ```
+
+8. LoveDA R-G-B Rural to GID
+
+     ```
+     cd ST-DASegNet
+     
+     ./tools/dist_train.sh ./experiments/segformerb5/config_GF2LoveDA/ST-DASegNet_segformerb5_769x769_40k_R2G.py 2
+     ```
+
+9. Paris to Chicago
+
+     ```
+     cd ST-DASegNet
+     
+     ./tools/dist_train.sh ./experiments/segformerb5/config_Paris2Chicago/ST-DASegNet_segformerb5_769x769_40k_P2C.py 2
+     ```
+
 ### Testing
   
 Trained with the above commands, you can get a trained model to test the performance of your model.   
