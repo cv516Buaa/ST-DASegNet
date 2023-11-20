@@ -1,6 +1,27 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import mmcv
 
+## added by LYU: 2023/11/18
+def Sentinel2_classes():
+    """Sentinel2 class names for external use."""
+    return [
+        'Water', 'BareGround', 'Woody', 'Non-Woody'
+    ]
+
+## added by LYU: 2023/11/14
+def GF2_classes():
+    """GF2 class names for external use."""
+    return [
+        'bulit-up', 'Farmland', 'Forest-Meadow', 'water'
+    ]
+
+## added by LYU: 2023/11/7
+def CITYOSM_classes():
+    """CITY_OSM class names for external use."""
+    return [
+        'Backgroud', 'Road', 'Building'
+    ]
+
 ## added by LYU: 2022/03/04
 def mmotu_classes():
     """mmotu class names for external use."""
@@ -244,6 +265,18 @@ def vaihingen_palette():
     return [[255, 255, 255], [0, 0, 255], [0, 255, 255], [0, 255, 0],
             [255, 255, 0], [255, 0, 0]]
 
+def CITYOSM_palette():
+    """CITY_OSM palette for external use."""
+    return [[255, 255, 255], [0, 0, 255], [255, 0, 0]]
+
+def GF2_palette():
+    """GF2 palette for external use."""
+    return [[255, 0, 0], [0, 255, 0], [0, 255, 255], [0, 0, 255]]
+
+def Sentinel2_palette():
+    """Sentinel2 palette for external use."""
+    return [[0, 0, 255], [136, 136, 136], [0, 255, 0], [255, 255, 0]]
+
 dataset_aliases = {
     'mmotu': ['mmotu'],
     'cityscapes': ['cityscapes'],
@@ -256,7 +289,10 @@ dataset_aliases = {
         'cocostuff', 'cocostuff10k', 'cocostuff164k', 'coco-stuff',
         'coco-stuff10k', 'coco-stuff164k', 'coco_stuff', 'coco_stuff10k',
         'coco_stuff164k'
-    ]
+    ],
+    'CITYOSM':['CITYOSM'],
+    'GF2':['GF2'],
+    'Sentinel2':['Sentinel2']
 }
 
 
